@@ -7,7 +7,7 @@ let s:mocho = [
         \]
 
 function! mocho#kaomoji()
-    call append(".", mocho#rand())
+    call append(".", mocho#echo())
 endfunction
 
 function! mocho#echo()
