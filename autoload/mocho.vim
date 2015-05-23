@@ -7,13 +7,12 @@ let s:mocho = [
         \]
 
 function! mocho#kaomoji()
-    let rand = mocho#rand()
-    call append(".", s:mocho[rand])
+    call append(".", mocho#rand())
 endfunction
 
-function! mocho#rand()
+function! mocho#echo()
     let localtime = localtime()
     let emoji = len(s:mocho)
     let rand = localtime % emoji
-    return rand
+    return s:mocho[rand]
 endfunction
