@@ -14,7 +14,7 @@
 .vimrcに
 
 ```
-set statusline=%{g:StatusMocho()}
+set statusline=%{StatusMocho()}
 ```
 
 って書き込むと(●・▽・●)がステータスラインでクルクル回るようになるよ〜
